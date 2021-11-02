@@ -1,8 +1,7 @@
 import torch
 import numpy as np
 
+file = open("./text.txt", "r");
 
-
-lol = torch.rand(size = (1,), dtype = torch.float32)
-lol.cuda()
-print(lol.device);
+for line in file:
+    print(line.split("/", -1));
